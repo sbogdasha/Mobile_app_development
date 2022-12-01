@@ -1,11 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Header from './components/header';
+import Selection from './components/selection';
+import TwoEquationsForm from './components/twoEquationsForm';
 
 export default function App() {
+  
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Header></Header>
+      <Selection></Selection>
     </View>
   );
 }
@@ -13,8 +17,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#add8e6',
   },
 });
